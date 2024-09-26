@@ -4,7 +4,7 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 export default function CorpsDetails({ name, info, chosenName, chosenInfo }) {
     return (
         <div className="container text-center">
-            <div className="row align-items-start mt-3">
+            <div className="row align-items-start mb-3">
                 <NameCard name={name} chosenName={chosenName} />
                 <LocationCard location={info.location} chosenLocation={chosenInfo.location} region={info.region} chosenRegion={chosenInfo.region} />
                 <ClassCard corpsClass={info.class} chosenClass={chosenInfo.class}/>
@@ -52,17 +52,9 @@ function YearFoundedCard({ year, chosenYear }) {
     let cardType = ""
     let arrow = null
     if (year === chosenYear) cardType = "success"
-    else if (Math.abs(year - chosenYear) <= 5) {
-        cardType = "warning"
-        if (year > chosenYear) {
-            arrow = <FontAwesomeIcon className='mt-1' icon={faAngleDown} />
-        }
-        else {
-            arrow = <FontAwesomeIcon className='mt-1' icon={faAngleUp} />
-        }
-    }
     else {
-        cardType = "danger"
+        if (Math.abs(year - chosenYear) <= 5) cardType = "warning"
+        else cardType = "danger"
         if (year > chosenYear) {
             arrow = <FontAwesomeIcon className='mt-1' icon={faAngleDown} />
         }
@@ -70,6 +62,7 @@ function YearFoundedCard({ year, chosenYear }) {
             arrow = <FontAwesomeIcon className='mt-1' icon={faAngleUp} />
         }
     }
+
     return (
         <div className={`card text-white bg-${cardType} col align-items-center`}>
             <div className='d-flex'>
