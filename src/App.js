@@ -11,7 +11,7 @@ function App() {
   const [completed, setCompleted] = useState(false)
   const [openModal, setOpenModal] = useState(false)
 
-  const corpsList = [
+  const [corpsList, setCorpsList] = useState([
     {name: "The Academy"},
     {name: "Blue Knights"},
     {name: "Blue Devils"},
@@ -49,11 +49,11 @@ function App() {
     {name: "River City Rhythm"},
     {name: "Spartans"},
     {name: "Vessel"},
-  ]
+  ])
 
   useEffect(() => {
     const corps = corpsList[Math.floor(Math.random() * corpsList.length)].name
-    console.log(corps)
+    if (window.location.hostname === 'localhost') console.log(corps)
     setChosenCorps(corps)
   }, [])
 
@@ -66,11 +66,11 @@ function App() {
 
     setInput("")
 
-    const index = corpsList.indexOf({name: corpsName})
-    delete corpsList[index]
+    setCorpsList((prevList) =>
+      prevList.filter((corps) => corps.name !== corpsName)
+    );
 
     if (corpsName == chosenCorps) {
-      console.log("You have chosen the right answer!")
       setCompleted(true)
       setOpenModal(true)
     }
