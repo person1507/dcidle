@@ -155,7 +155,7 @@ function createCorpsMap() {
   corpsMap.set("Golden Empire", {location: "Bakersfield, CA", region: "West", class: "Open", yearFounded: 2014})
   corpsMap.set("Guardians", {location: "Dallas, TX", region: "South", class: "Open", yearFounded: 2012})
   corpsMap.set("Heat Wave", {location: "Tampa Bay, FL", region: "South", class: "Open", yearFounded: 2015})
-  corpsMap.set("Impulse", {location: "Buena Park, CA", region: "West", class: "Open", yearFounded: 1998})
+  corpsMap.set("Impulse!", {location: "Buena Park, CA", region: "West", class: "Open", yearFounded: 1998})
   corpsMap.set("Les Stentors", {location: "Sherbrooke, QC", region: "Canada", class: "Open", yearFounded: 1988})
   corpsMap.set("Raiders", {location: "Princeton, NJ", region: "Northeast", class: "Open", yearFounded: 1990})
   corpsMap.set("River City Rhythm", {location: "Anoka, MN", region: "Midwest", class: "Open", yearFounded: 2014})
