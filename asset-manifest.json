@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dcidle/static/css/main.bb2e8f25.css",
-    "main.js": "/dcidle/static/js/main.4c940603.js",
+    "main.js": "/dcidle/static/js/main.d2bcd6f8.js",
     "static/js/453.525360f1.chunk.js": "/dcidle/static/js/453.525360f1.chunk.js",
     "index.html": "/dcidle/index.html",
     "main.bb2e8f25.css.map": "/dcidle/static/css/main.bb2e8f25.css.map",
-    "main.4c940603.js.map": "/dcidle/static/js/main.4c940603.js.map",
+    "main.d2bcd6f8.js.map": "/dcidle/static/js/main.d2bcd6f8.js.map",
     "453.525360f1.chunk.js.map": "/dcidle/static/js/453.525360f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb2e8f25.css",
-    "static/js/main.4c940603.js"
+    "static/js/main.d2bcd6f8.js"
   ]
 }
